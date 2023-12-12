@@ -1,0 +1,24 @@
+#Define channels for 2D Histogram
+hist2d_start_channel: 3
+hist2d_stop_channel_1: 1
+hist2d_stop_channel_2: 2
+#Bin information
+hist2D_binwidth_1: 10000
+hist2d_binwidth_2: 10000
+hist2d_n_bins_1: 10
+hist2d_n_bins_2: 10
+#Trigger levels for each channel (V)
+trigger_1: 0.01
+trigger_2: 0.01
+trigger_3: 0.1
+#Deadtimes for each channel (ps) (clock doesn't need one)
+deadtime_1: 50000
+deadtime_2: 50000
+#This will downsample the specified channel
+eventdivider_3: 10
+
+#Correlation measurement parameters
+correlation_channel1: 1
+correlation_channel2: 2
+correlation_binwidth: 1000
+correlation_nbins: 40
