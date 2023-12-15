@@ -1,0 +1,4 @@
+correlation_channel1: 1
+correlation_channel2: 2
+correlation_binwidth: 1000
+correlation_nbins: 40

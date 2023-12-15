@@ -25,7 +25,7 @@ class Client():
         self.connected = True
 
 
-    def send_message(self, msg, timeout=10000):
+    def send_message(self, msg, timeout=10000, decode = True):
         msg = msg.encode()
         msgTimeout = 'Timeout'
         # msgTimeout = msgTimeout.encode()
@@ -42,7 +42,8 @@ class Client():
                     # print(msg)
                     # print(response)
                     # print('')
-                    response = response.decode()
+                    if decode:
+                        response = response.decode()
                 except:
                     # response = msgTimeout
                     self.connected = False
